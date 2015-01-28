@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source_files = "OctoKit"
   s.requires_arc = true
 
-  s.ios.deployment_target = "5.1"
-  s.osx.deployment_target = "10.7"
+  s.ios.deployment_target = "6.0"
+  s.osx.deployment_target = "10.8"
 
   s.prepare_command = <<-'END'
   find . -regex '.*\.[hm]' -exec sed -i '' -E 's@<ReactiveCocoa/(EXT.*)\.h>@<ReactiveCocoa/RAC\1.h>@' {} \;
